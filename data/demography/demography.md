@@ -41,3 +41,30 @@ graph TD
 * iao = Information Artefact Ontology
 * stato = Statistical Methods Ontology
 
+## Administrative gender
+```mermaid
+%%{init: {'theme':'base'}}%%
+graph TD
+   
+    
+    A{Person} -->|rdf:type| B[ncit:person]
+    C{Role:<br> Study participant} -->|rdf:type| D[ncit:human study subject]
+    F{Quality/Attribute<br> type: Female}
+    G{Process:<br>Sex recording process} -->|ro:has output| H{Output type:<br>Female}
+    C -->|rdf:type| E[ro:role]
+    A -->|ro:has role| C
+    A -->|??:has quality/attribute| F
+    C -->|ro:realized in| G
+    H -->|stato:has value| I((female))
+    H -->|rdf:type| K[??:output]
+    G -->|rdf:type| J[??:process]
+    H -->|??:refers to| F
+    F -->|rdf:type| L[??:attribute/quality]
+    F -->|rdf:type| M[??:admin sex/gender]
+    F -->|rdf:type| N[??:female/male/??]
+    
+    classDef literal fill:#dae8fc;
+    classDef ontology fill:#d5e8d4;
+    class I literal;
+    class K,J,B,D,E,L,M,N ontology;
+ ```
