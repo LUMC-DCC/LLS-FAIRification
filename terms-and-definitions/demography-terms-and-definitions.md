@@ -1,56 +1,32 @@
+ ### Ontology terms used for demography variables
 
-The following variables are part of the LLS-data but were not explored during the LLS-FAIRification pilot. OPAL variable names, descriptions and candidate ontologies have not been discussed, agreed upon and/or may have changed. Go to the [Mica-catalogue](https://dw.clinicalresearch.nl/pub/study/lls) of LLS for an up-to-date overview of the LSS-data.
+| Element | Description | Ontology | Value | Units |
+| ------- | ----------- | -------- | ----- | ----- | 
+| LLnr    | For LLS generated identifier for the participant | [ncit:identifier (C25364)](http://purl.obolibrary.org/obo/NCIT_C25364) | UniqueID  |       |
+| famID   | For LLS generated identifier for the family the participant belongs to | [ncit:identifier (C25364)](http://purl.obolibrary.org/obo/NCIT_C25364) | UniqueID  |       |
+| Output: Age            | Is about the age of the person as recorded during the first inclusion round (IOP1) | [ncit:output (C47906)](http://purl.obolibrary.org/obo/NCIT_C47906)             | Integer | [uo:year (0000036)](http://purl.obolibrary.org/obo/UO_0000036) |
+| Output: female/male    | Is about the administrative gender of a person as recorded from the Dutch Basis Registratie Personen | [ncit:output (C47906)](http://purl.obolibrary.org/obo/NCIT_C47906)             | String | female or male |
+| Person                 | A human being | [ncit:person (C25190)](http://purl.obolibrary.org/obo/NCIT_C25190)             | | |
+| Role:Study participant | A living individual about whom an investigator conducting research obtains data through intervention or interaction with the individual or through identifiable private information | [ncit:human study subject (C70665)](http://purl.obolibrary.org/obo/NCIT_C70665)| | |
+|                        | The role a person has in the study | [ro:role (0000023)](http://purl.obolibrary.org/obo/BFO_0000023)                | | |
+| Family                 | A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption | [ncit:family (C25173)](http://purl.obolibrary.org/obo/NCIT_C25173)             | | |
+| Quality: Sex           || [iao:quality (0000019)](http://purl.obolibrary.org/obo/BFO_0000019)             | | |
+|                        | A person's gender as represented or recognized in any of various administrative systems | [gsso:administrative gender (009316)](http://purl.obolibrary.org/obo/GSSO_009316)             | | |
+|                        | A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both | [ncit:female (C16576)](http://purl.obolibrary.org/obo/NCIT_C16576)             | | |
+|                        | A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both | [ncit:male (C20197)](http://purl.obolibrary.org/obo/NCIT_C20197)             | | |
+| Quality: Age           || [iao:quality (0000019)](http://purl.obolibrary.org/obo/BFO_0000019)             | | |
+|                        | How long something has existed; elapsed time since birth | [ncit:age (C25150)](http://purl.obolibrary.org/obo/NCIT_C25150)             | | |
+| Process:               || [iao:process (0000015)](http://purl.obolibrary.org/obo/BFO_0000015)             | | |
+| denotes                | relation/predicate | [iao:denotes (0000219)](http://purl.obolibrary.org/obo/IAO_0000219)            | | |
+| has measurement unit label | relation/predicate | [iao:has measurement unit label (IAO_0000039)](http://purl.obolibrary.org/obo/IAO_0000039) | | |
+| has quality            | relation/predicate | [iao:has quality (0000086)](http://purl.obolibrary.org/obo/RO_0000086)           | | |
+| is about               | relation/predicate | [iao:is about (0000136)](http://purl.obolibrary.org/obo/IAO_0000136)           | | |
+| has output             | relation/predicate | [ro:has output (0002234)](http://purl.obolibrary.org/obo/RO_0002234)           | | |
+| has role               | relation/predicate | [ro:has role (0000087)](http://purl.obolibrary.org/obo/RO_0000087)             | | |
+| member of              | relation/predicate | [ro:member of (0002350)](http://purl.obolibrary.org/obo/RO_0002350)            | | |
+| realized in            | relation/predicate | [ro:realized in (0000054)](http://purl.obolibrary.org/obo/BFO_0000054)           | | |
+| has value              | relation/predicate | [stato:has value (0000129)](http://purl.obolibrary.org/obo/STATO_0000129)      | | |
 
-## Other variables
 
-| Element           | OPAL variable name | Preliminary description                   | Candidate ontology                         | Values | Units |
-| ----------------- | ------------------ | ----------------------------------------- | ------------------------------------------ | ------ | ----- |
-| Visitdate         | visitdate          | The date at which the participant visited | http://purl.obolibrary.org/obo/NCIT_C83031 |        |       |
-| time of blooddraw | time_of_blooddraw  | the time the blood was drawn              | http://purl.obolibrary.org/obo/NCIT_C25207 |        |       |
-| LabNr_IOP1       | LabNr_IOP1         | ID of biomaterial during IOP1 inclusion   | http://edamontology.org/data_0842           |        |       |
-| GWASnr           | GWASnr             | ID of SNP array data                      | http://edamontology.org/data_0842           |        |       |
 
-## Gut microbiome related metabolites
 
-| Element          | OPAL variable name      | Preliminary description                             | Candidate ontology                          | Values | Units |
-| ---------------- | ----------------------- | --------------------------------------- | ------------------------------------------- | ------ | ----- |
-| LabNr_IOP1       | LabNr_IOP1              | ID of biomaterial during IOP1 inclusion | http://edamontology.org/data_3273           |        |       |
-| NMCname          | GMRM18_NMCname          | NMCname/ID                              |                                             |        |       |
-| measurement_date | GMRM18_measurement_date | date of measurement                     | http://purl.obolibrary.org/obo/OPMI_0000580 |        |       |
-| source           | GMRM18_source           | source material for measurement         | http://purl.org/dc/elements/1.1/source      |        |       |
-| BetaineµM        | GMRM18_Betaine          | Betaine (µM)                            | http://purl.obolibrary.org/obo/CHEBI_17750  |        | µM    |
-| CarnitineµM      | GMRM18_Carnitine        | Carnitine (µM)                          | http://purl.obolibrary.org/obo/CHEBI_17126  |        | µM    |
-| CholineµM        | GMRM18_Choline          | Choline (µM)                            | http://purl.obolibrary.org/obo/CHEBI_15354  |        | µM    |
-| DeoxycarnitineµM | GMRM18_Deoxycarnitine   | Deoxycarnitine (µM)                     | http://purl.obolibrary.org/obo/CHEBI_16244  |        | µM    |
-| TMAOµM           | GMRM18_TMAO             | TMAO (µM)                               | http://purl.obolibrary.org/obo/CHEBI_15724  |        | µM    |
-
-## Visit measures
-
-| Element          | OPAL variable name | Preliminary description                                                                                                              | Candidate ontology | Values | Units |
-| ---------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------ | --------           | ------ | ----- |
-| StudNum          | LLnr               | LLnr (Leiden Longevity number)                                                                                           |                    |        |       |
-| ADL01            | ADL01              | 1. Stoelgang (in voorafgaande week)                                                                                      |                    |        |       |
-| ADL02            | ADL02              | 2. Blaas (in voorafgaande week)                                                                                          |                    |        |       |
-| ADL03            | ADL03              | 3. Voeding                                                                                                               |          |        |       |
-| ADL04            | ADL04              | 4. Verzorging (gezicht, haar, tanden, scheren)                                                                           |          |        |       |
-| ADL05            | ADL05              | 5. Kleden                                                                                                                |          |        |       |
-| ADL06            | ADL06              | 6. Verplaatsen                                                                                                           |          |        |       |
-| ADL07            | ADL07              | 7. Gebruik van het toilet                                                                                                |          |        |       |
-| ADL08            | ADL08              | 8. Lopen (met betrekking tot de mobiliteit in huis of op de afdeling, binnen)                                            |          |        |       |
-| ADL09            | ADL09              | 9. Traplopen                                                                                                             |          |        |       |
-| ADL10            | ADL10              | 10. Baden (meestal de moeilijkste handeling)                                                                             |          |        |       |
-| IADL01           | IADL01             | 1. Kunt u telefoneren…                                                                                                   |          |        |       |
-| IADL02           | IADL02             | 2. Kunt u plaatsen bereiken die buiten loopafstand liggen…                                                               |          |        |       |
-| IADL03           | IADL03             | 3. Kunt u uw eigen boodschappen, levensmiddelen of kleding, doen (ervan uitgaande dat de patiënt beschikt over vervoer)… |          |        |       |
-| IADL04           | IADL04             | 4. Kunt u voor u zelf koken…                                                                                             |          |        |       |
-| IADL05           | IADL05             | 5. Kunt u huishoudelijk werk doen…                                                                                       |          |        |       |
-| IADL06           | IADL06             | 6. Kunt u uw eigen medicijnen innemen…                                                                                   |          |        |       |
-| IADL07           | IADL07             | 7. Kunt u uw eigen geldzaken regelen…                                                                                    |          |        |       |
-| sum_adl_iadl     | sum_adl_iadl       | Som totalen ADL en IADL                                                                                                  |          |        |       |
-| MMSE             | MMSE               | Mini Mental State Examination                                                                                            |          |        |       |
-| MMSE_Status      | MMSE_Status        | Status over afname MMSE                                                                                                  |          |        |       |
-| MMSE_Opmerking   | MMSE_Opmerking     | MMSE opmerking                                                                                                           |          |        |       |
-| MMSE_filter      | MMSE_filter        | Status = 1 (FILTER)                                                                                                      |          |        |       |
-| Cant01           | Cant01             | Waarop de ladder bevindt u zich persoonlijk op dit moment (in uw leven)?                                                 |          |        |       |
-| Cant02           | Cant02             | Status over afname Cantril’s ladder                                                                                      |          |        |       |
-| Cant02_Opmerking | Cant02_Opmerking   | Cantril ladder opmerking                                                                                                 |          |        |       |
