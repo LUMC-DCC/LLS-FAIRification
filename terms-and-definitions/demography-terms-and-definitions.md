@@ -1,28 +1,18 @@
-## Demography
 
-| Element          | OPAL variable name | Description                               | Ontology                                    | Values | Units |
-| ---------------- | ------------------ | ----------------------------------------- | ------------------------------------------- | ------ | ----- |
-| LLnr             | LLnr               | LLnr (Leiden Longevity number)            | http://edamontology.org/data_0842           |        |       |
-| GWASnr           | GWASnr             | ID of SNP array data                      | http://edamontology.org/data_0842           |        |       |
-| FID_GRR          | famID              | family ID                                 | http://edamontology.org/data_0842           |        |       |
-| LabNr_IOP1       | LabNr_IOP1         | ID of biomaterial during IOP1 inclusion   | http://edamontology.org/data_0842           |        |       |
-| Sex              | sex                | The sex of the participant                | http://purl.obolibrary.org/obo/NCIT_C28421  |        |       |
-| Overlijdensdatum | date_of_death      | date of death                             | http://purl.obolibrary.org/obo/NCIT_C70810  |        |       |
-| Leeftijd_IOP1    | age_IOP1           | age at IOP1 inclusion                     | http://purl.obolibrary.org/obo/NCIT_C25150  |        |       |
-| Peildatum        | reference_date     | reference date for mortality check        | http://purl.obolibrary.org/obo/NCIT_C82518  |        |       |
-| Death2021        | death2021          | vital status at reference date 11-01-2021 | http://purl.obolibrary.org/obo/NCIT_C25717  |        |       |
-| Age at death     | age_at_death       | age at death                              | http://purl.obolibrary.org/obo/NCIT_C135383 |        |       |
+The following variables are part of the LLS-data but were not explored during the LLS-FAIRification pilot. OPAL variable names, descriptions and candidate ontologies have not been discussed, agreed upon and/or may have changed. Go to the [Mica-catalogue](https://dw.clinicalresearch.nl/pub/study/lls) of LLS for an up-to-date overview of the LSS-data.
 
 ## Other variables
 
-| Element           | OPAL variable name | Description                               | Ontology                                   | Values | Units |
+| Element           | OPAL variable name | Preliminary description                   | Candidate ontology                         | Values | Units |
 | ----------------- | ------------------ | ----------------------------------------- | ------------------------------------------ | ------ | ----- |
 | Visitdate         | visitdate          | The date at which the participant visited | http://purl.obolibrary.org/obo/NCIT_C83031 |        |       |
 | time of blooddraw | time_of_blooddraw  | the time the blood was drawn              | http://purl.obolibrary.org/obo/NCIT_C25207 |        |       |
+| LabNr_IOP1       | LabNr_IOP1         | ID of biomaterial during IOP1 inclusion   | http://edamontology.org/data_0842           |        |       |
+| GWASnr           | GWASnr             | ID of SNP array data                      | http://edamontology.org/data_0842           |        |       |
 
 ## Gut microbiome related metabolites
 
-| Element          | OPAL variable name      | Description                             | Ontology                                    | Values | Units |
+| Element          | OPAL variable name      | Preliminary description                             | Candidate ontology                          | Values | Units |
 | ---------------- | ----------------------- | --------------------------------------- | ------------------------------------------- | ------ | ----- |
 | LabNr_IOP1       | LabNr_IOP1              | ID of biomaterial during IOP1 inclusion | http://edamontology.org/data_3273           |        |       |
 | NMCname          | GMRM18_NMCname          | NMCname/ID                              |                                             |        |       |
@@ -36,11 +26,11 @@
 
 ## Visit measures
 
-| Element          | OPAL variable name | Description                                                                                                              | Ontology | Values | Units |
-| ---------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------ | -------- | ------ | ----- |
-| StudNum          | LLnr               | LLnr (Leiden Longevity number)                                                                                           |          |        |       |
-| ADL01            | ADL01              | 1. Stoelgang (in voorafgaande week)                                                                                      |          |        |       |
-| ADL02            | ADL02              | 2. Blaas (in voorafgaande week)                                                                                          |          |        |       |
+| Element          | OPAL variable name | Preliminary description                                                                                                              | Candidate ontology | Values | Units |
+| ---------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------ | --------           | ------ | ----- |
+| StudNum          | LLnr               | LLnr (Leiden Longevity number)                                                                                           |                    |        |       |
+| ADL01            | ADL01              | 1. Stoelgang (in voorafgaande week)                                                                                      |                    |        |       |
+| ADL02            | ADL02              | 2. Blaas (in voorafgaande week)                                                                                          |                    |        |       |
 | ADL03            | ADL03              | 3. Voeding                                                                                                               |          |        |       |
 | ADL04            | ADL04              | 4. Verzorging (gezicht, haar, tanden, scheren)                                                                           |          |        |       |
 | ADL05            | ADL05              | 5. Kleden                                                                                                                |          |        |       |
