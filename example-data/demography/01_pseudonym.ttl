@@ -1,0 +1,24 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#Person is of type ncit:person, has a role as study participant and is member of a family
+<http://lls_example_data.org/person/001-001-001> a obo:NCIT_C25190 ;
+	obo:RO_0000087 <http://lls_example_data.org/study_participant/001-001-001> ;
+	obo:RO_0002350 <http://lls_example_data.org/longevity_family/233> .
+
+#Participant ID (LLnr) is of type ncit:identifier, denotes the study participant role and has a certain value
+<http://lls_example_data.org/participant_identifier/001-001-001> a obo:NCIT_C25364 ;
+	obo:IAO_0000219 <http://lls_example_data.org/study_participant/001-001-001> ;
+	obo:STATO_0000129 "001-001-001"^^xsd:string .
+
+
+#Role study participant is of type ro:role and of type ncit:human study subject
+<http://lls_example_data.org/study_participant/001-001-001> a obo:BFO_0000023, obo:NCIT_C70665 .
+
+#Family ID is of type ncit:identifier, denotes the family to which the person belongs to and has a certain value
+<http://lls_example_data.org/family_identifier/233> a obo:NCIT_C25364 ;
+	obo:IAO_0000219 <http://lls_example_data.org/longevity_family/233> ;
+	obo:STATO_0000129 "233"^^xsd:string .
+
+#Family is of type ncit:family
+<http://lls_example_data.org/longevity_family/233> a obo:NCIT_C25173 .
