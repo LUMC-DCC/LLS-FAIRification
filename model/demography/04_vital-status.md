@@ -1,4 +1,5 @@
 ### Model vital status
+```mermaid
 %%{init: {'theme':'base'}}%%
 graph TD
    
