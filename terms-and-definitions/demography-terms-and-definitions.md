@@ -5,8 +5,8 @@
 | LLnr    | For LLS generated identifier for the participant | [ncit:identifier (C25364)](http://purl.obolibrary.org/obo/NCIT_C25364) | UniqueID  |       |
 | famID   | For LLS generated identifier for the family the participant belongs to | [ncit:identifier (C25364)](http://purl.obolibrary.org/obo/NCIT_C25364) | UniqueID  |       |
 | Output: Age            | Is about the age of the person as recorded during the first inclusion round (IOP1) | [ncit:output (C47906)](http://purl.obolibrary.org/obo/NCIT_C47906)             | Integer | [uo:year (0000036)](http://purl.obolibrary.org/obo/UO_0000036) |
-| Output: Sex    | Is about the administrative gender of a person as recorded from the Dutch Basis Registratie Personen | [ncit:output (C47906)](http://purl.obolibrary.org/obo/NCIT_C47906)             | String | female or male |
-| Output: Vital status    | Is about the the state or condition of being living or deceased  | [ncit:output (C47906)](http://purl.obolibrary.org/obo/NCIT_C47906)             | String | dead or alive or lost to follow up |
+| Output: Sex    | Is about the administrative gender of a person as recorded from the Dutch Basis Registratie Personen | [ncit:output (C47906)](http://purl.obolibrary.org/obo/NCIT_C47906)             | Decimal (1, 2) |  |
+| Output: Vital status    | Is about the the state or condition of being living or deceased  | [ncit:output (C47906)](http://purl.obolibrary.org/obo/NCIT_C47906)             | String (dead, alive, lost to follow up) |  |
 | Output: Death of death    | Is about the the calendar date of subject's death  | [ncit:output (C47906)](http://purl.obolibrary.org/obo/NCIT_C47906)             | Date |  |
 | Person                 | A human being | [ncit:person (C25190)](http://purl.obolibrary.org/obo/NCIT_C25190)             | | |
 | Role:Study participant | A living individual about whom an investigator conducting research obtains data through intervention or interaction with the individual or through identifiable private information | [ncit:human study subject (C70665)](http://purl.obolibrary.org/obo/NCIT_C70665)| | |
