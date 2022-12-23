@@ -11,7 +11,7 @@ In this Github repository we present a complementary effort to semantically mode
 * The FAIRification process, experiences and tools used in the [wiki](https://github.com/LUMC-DCC/LLS-FAIRification/wiki). In this pilot:
   * We followed a [FAIRification workflow](https://github.com/LUMC-DCC/LLS-FAIRification/wiki/FAIRification-workflow)
   * We used [Ontop and GraphDB](https://github.com/LUMC-DCC/LLS-FAIRification/wiki/Tools-used-to-ontologize-data) to create and store ontologized data in RDF-format
-  * We based our semantic model on the one for common data elements for rare disease registries (see [here](https://doi.org/10.1186/s13326-022-00264-6) and [here](https://github.com/ejp-rd-vp/CDE-semantic-model)), but decided to make use of [OBO foundry ontologies](https://obofoundry.org/) only
+  * We based our semantic model on the one for common data elements for rare disease registries (see [here](https://doi.org/10.1186/s13326-022-00264-6) and [here](https://github.com/ejp-rd-vp/CDE-semantic-model)), but decided to make use of [OBO foundry ontologies](https://obofoundry.org/) only. This was prompted by the work on the [COVID-19 Epidemiology and Monitoring Ontology (CEMO)](https://github.com/NuriaQueralt/covid19-epidemiology-ontology).
   * Our presented semantic model is limited to the LSS demography data for now and is an 'alpha version' 
 
 
