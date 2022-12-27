@@ -49,7 +49,6 @@ graph TD
     obo:IAO_0000219 <http://lls_example_data.org/study_participant/001-001-001> ;
     obo:STATO_0000129 "001-001-001"^^xsd:string .
 
-
 #Role study participant is of type ro:role and of type ncit:human study subject
 <http://lls_example_data.org/study_participant/001-001-001> a obo:BFO_0000023, obo:NCIT_C70665 .
 
