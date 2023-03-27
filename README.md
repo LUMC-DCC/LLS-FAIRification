@@ -14,5 +14,7 @@ In this Github repository we present a complementary effort to semantically mode
   * We based our semantic model on the one for common data elements for rare disease registries (see [here](https://doi.org/10.1186/s13326-022-00264-6) and [here](https://github.com/ejp-rd-vp/CDE-semantic-model)), but decided to make use of [OBO foundry ontologies](https://obofoundry.org/) only. This was prompted by the work on the [COVID-19 Epidemiology and Monitoring Ontology (CEMO)](https://github.com/NuriaQueralt/covid19-epidemiology-ontology)
   * Our presented semantic model is limited to the LSS demography data for now and is an 'alpha version' 
 
+## LLS FAIR Data Point (FDP) catalog
+A first test was done with creating an [LLS catalog](https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72) according to the [pre-loaded metadata structure of the FDP reference implementation](https://specs.fairdatapoint.org/#navigationinformation) (LUMC FDP > LLS catalog > two LLS datasets). A next step would be to explore how human-findable metadata from OPAL/Mica can be converted to machine-actionable metadata in the LLS FDP catalog.
 
 
